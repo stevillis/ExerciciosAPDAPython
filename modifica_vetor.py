@@ -9,14 +9,13 @@ cont = 0
 vetor = []
 
 def modifica_vetor(vetor):
-    for num in vetor:
-        index_num= vetor.index(num)
+    for cont, num in enumerate(vetor):        
         if num < 0:            
-            vetor[index_num] = 0
+            vetor[cont] = 0
         elif num < 10:
-            vetor[index_num] = 1
+            vetor[cont] = 1
         else:
-            vetor[index_num] = 2
+            vetor[cont] = 2
     return vetor
         
             
